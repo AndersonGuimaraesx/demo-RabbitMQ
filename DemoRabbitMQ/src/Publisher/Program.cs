@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Core.UseCase;
 
 namespace Publisher
 {
@@ -6,7 +7,9 @@ namespace Publisher
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var provider = InjectionServiceProvider.Inject();
+            var service = provider.GetService<StartWorkRabbitMQ>();
+            service.Publish();
         }
     }
 }

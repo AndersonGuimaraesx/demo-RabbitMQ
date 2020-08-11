@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Consumer", "3 - Consume
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Core", "0 - Core", "{F011AF3D-E2E1-4249-BD15-54900396BF91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagerRabbitMQ", "src\ManagerRabbitMQ\ManagerRabbitMQ.csproj", "{65E62BB1-097A-450D-8138-615AE8F29EFB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagerRabbitMQ.API", "src\ManagerRabbitMQ\ManagerRabbitMQ.API.csproj", "{65E62BB1-097A-450D-8138-615AE8F29EFB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Publisher", "src\Publisher\Publisher.csproj", "{44B960DC-801E-43EA-A3B6-A2202410D4BD}"
 EndProject

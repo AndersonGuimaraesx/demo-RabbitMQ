@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.UseCase;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Consumer
 {
@@ -6,7 +7,9 @@ namespace Consumer
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var provider = InjectionServiceProvider.Inject();
+            var service = provider.GetService<StartWorkRabbitMQ>();
+            service.Consume();
         }
     }
 }
